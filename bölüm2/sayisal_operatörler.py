@@ -13,6 +13,6 @@ print(6%4) #mod alır kalanı verir
 boy=5
 boy=boy+3
 print(boy)
-boy+=3
+boy+=3  #+= kısmı arttır ata anlamına gelir pratiktir aynı zamanda diğer operatörler için de kullanılabilir
 print(boy)
 #burada boy değerinin üstüne 3 ekleyerek yeni boy değeri oluşturulur
