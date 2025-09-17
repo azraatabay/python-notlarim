@@ -35,9 +35,28 @@ for i in cumle: #i cümle içinde dönüyor
 rakamlar="2479"
 while True:
     deneme=input("Bir rakam deneyiniz:")
-    if rakamlar not in deneme:
+    if deneme not in rakamlar:
         pass
+        print("Yanlış tahmin tekrar deneyiniz.")
+    else:
+        print("Tebrikler! Rakamı buldunuz.")
+        break
 
+rakamlar="2479"
+while True:
+    deneme=input("Bir rakam deneyiniz:")
+    if deneme not in rakamlar:
+        continue
+        print("Yanlış tahmin tekrar deneyiniz.")
+    else:
+        print("Tebrikler! Rakamı buldunuz.")
+        break
+
+#ÖNEMLİ NOT! pass ile continue arasındaki fark continue eğer koşul sağlanmıyorsa döngüyü hemen sonlandırır sonraki bloğa geçmez
+#pass ise hiçbir şey yapmadan devam et demektir koşul sağlanmıyosa bişey yapmaz sonraki adıma geçer
+#Bu yüzden continue konulduğunda "Yanlış tahmin tekrar deneyiniz." çıktı olarak görünmez. Kodun bir sonraki adıma geçmesine izin vermeden başa döndürdüğü için.
+
+#Ayrcıa pass komutu daha sonra kod eklenecek yerleri belirtmek için de kullanılabilir.
 
 
 
