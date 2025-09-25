@@ -34,3 +34,13 @@ liste=[1,1,7,7,75,4,7,3,4,7,9,45,7]
 toplam=sum(liste)
 print(toplam)
 
+#liste üreteçleri
+liste=[a for a in range(5)] #buradaki ilk a listeye ne koyucalak sorusunun cevabıdır ikinci a ise üzerinde gezilen değeri belirtir
+print(liste)
+
+liste=[a+1 for a in range(5)] #burada a+1 dediğimiz için listeye a değerinin 1 fazlasını yazdırdı
+print(liste)
+
+liste=[a for a in range(33) if a%2==0]
+print(liste)
+
