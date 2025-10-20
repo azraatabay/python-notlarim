@@ -26,4 +26,31 @@ print(sozluk)
 sozluk.clear() #sözlük içinde tüm değerleri siler
 print(sozluk)
 
+sozluk={"kedi":"cat","kalem":"pencil","elma":"apple","pen":"dolma kalem"}
+for i in sozluk:
+    print("Türkçe:" ,i, "İngilizce:",sozluk[i])
+#sözlük içindekileri alt alta yazdırır
+
+print(sozluk.items()) #sözlük içindeki key-value değerlerine aynı anda ulaşmayı sağlar
+
+sozluk={"kedi":"cat","kalem":"pencil","elma":"apple","pen":"dolma kalem"}
+for key, value in sozluk.items(): #burada key, value yazdığımız sözlükleri ikili çiftleri alıyor .items sayesinde ikili olarak ulaşılıyor zaten
+    print("Anahtar:", key, "Değer:", value)
+
+# .keys() anahtarlara ulaşır
+# .values() değerlere ulaışır
+for i in sozluk.keys():
+    print(i)
+for k in sozluk.values():
+    print(k)
+
+#eleman sayısını bulma len() ile yapılır aslında anahtar sayısı bulunur
+print(len(sozluk))
+
+#anahtar varlığını kontrol edilirken in ve not in kullanılır. Değer varlığı kontrol edilemez.
+print("kedi" in sozluk)
+print("pencil" in sozluk) #değerde olduğundan false verdi
+print("pencil" not in sozluk)
+print()
+
 
