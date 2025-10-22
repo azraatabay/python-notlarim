@@ -1,6 +1,6 @@
 #fonsiyonlar program içinde yer alan alt program parçalarıdır
 #kodun modüler olmasını sağlar. komut isminden sonra () gelir. Parametreli ya da parametresiz olabilir
-from bölüm5.kümler1 import birlesim
+from bölüm1.veriturleri import mesaj
 
 
 #fonksiyon tanımlama def fonksiyon_ismi(varsa paramerte(ler)
@@ -38,6 +38,22 @@ def iki_islem(a,b):
     çarpim=a*b
     toplam1=a+b
     return çarpim,toplam1
-degerr=iki_islem(5,10)
-print(degerr)
+carpimlari, toplamlari=iki_islem(5,10)
+print("Çarpımları:",carpimlari,"Toplamları:",toplamlari)
+
+#varsayılan değerli parametreler
+# parametrelere değer gönderilmemesi hata mesajı döndürür bunu engellemek için parametrelere varsayılan değer verilebilir
+def mesaj_yaz(mesaj="cnm",adet=3):
+    for i in range(adet):
+        print(mesaj)
+#burada adet sayısı kadar mesaj değerini döndüren bir fonksiyon vardır
+mesaj_yaz("hello") #adet sayısı varsayılan olarak yazıldığından hata mesajı direkt 3 olarak aldı
+mesaj_yaz("azrö",1) #burada adet sayısını fonksiyon içinde yazmasında rağmen biz bir değer verdiğimizde 1 olarak kabul etti
+#aynı şekilde iki paramatreye de değer verebiliriz
+mesaj_yaz() #parametreye bir değer girilmediği taktirde fonksiyon içindeki varsayılanları alır
+
+#eğer mesaj varsayılanı olup adet olmazsa hata mesajı oluşturur!!!!!!!!
+#varsayılan değerli bir parametreyi varsayılan değeri olmayan parametre takip edemez
+
+
 
