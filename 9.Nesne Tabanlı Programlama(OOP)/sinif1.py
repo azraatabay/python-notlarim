@@ -10,6 +10,8 @@ class Calisan():  #sınıf niteliklerine erişmek için sınıf adlarının para
 print(Calisan.kabiliyetleri)
 print(Calisan.unvani)
 
+ayse=Calisan()
+fatma=Calisan()
 ahmet=Calisan()  #sınıfı ahmet adlı değişkene atadık bu işleme örnekleme ya da örneklendirme denir
 #bir fonksiyonu kullanışlı hale getirmeye "çağırma", bir sınıfı kullanışlı hale getirmeye "örnekleme" denir
 
